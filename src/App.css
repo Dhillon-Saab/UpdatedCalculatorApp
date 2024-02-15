@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque&family=Tilt+Neon&display=swap');
+
+body{
+  background-image: url(https://img.freepik.com/premium-vector/seamless-pattern-modern-purple-small-calculator-with-basic-function-flat-vector-illustration-white-background_257455-2509.jpg?w=826);
+  /* Image aquired from : freepik.com */
+  backdrop-filter: blur(2px);
+}
+
+h1{
+  font-family: 'Tilt Neon';
+  font-weight: 600;
+  font-size: 50px;
+  color: rgb(6, 42, 97);
+  text-shadow:#ddd;
+
+}
+
+.App {
+  width: 450px;
+  height: 500px;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius:40px;
+  text-align: center;
+  color: black;
+  font-family: 'Arial', sans-serif;
+  background-color: rgba(173, 173, 173, 0.647);
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 25%);
+  align-items: center;
+  justify-content: center;
+}
+
+.display {
+  margin: 20px auto;
+  padding: 10px;
+  width: 300px;
+  border: 1px solid #717171;
+  border-radius: 5px;
+  text-align: right;
+  font-size: 2em;
+  background-color: #f0f0f08f;
+  box-shadow: 0px 0px 20px 10px rgb(172, 175, 175);
+}
+
+.keypad {
+  display: grid;
+  grid-template-columns: repeat(4, 75px);
+  grid-gap: 10px;
+  justify-content: center;
+}
+
+.keypad button {
+  padding: 10px;
+  font-size: 1em;
+  border: 1px solid black;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #ddd;
+  transition: background-color 0.3s, transform 0.1s;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.keypad button:hover {
+  background-color: #ccc;
+  box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.15);
+
+}
+
+
+/* Styling for click effect */
+.keypad button:active {
+  transform: translateY(0.5em);
+  background-color: azure;
+}
